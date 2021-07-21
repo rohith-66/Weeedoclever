@@ -1,0 +1,135 @@
+{% extends 'basic.html' %}
+{% block title %}
+HOME
+{% endblock title %}
+{% block body %}
+
+{% load static %}
+<style>
+html {
+  height:100%;
+}
+
+body {
+  margin:0;
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg,crimson 50%, aqua 50%);
+  bottom: 0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+
+.text {
+  
+  color: black;
+  font-size: 6vw; 
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+  
+}
+h1 {
+  font-family:monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+
+
+
+
+</style>
+<!---->
+
+
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+
+<div class="alert alert-primary d-flex align-items-center" role="alert" role="alert" style="border-radius:10px; text-align:center; ">
+  <img  src="{% static 'images/icon_new.gif' %}" alt="Logo" style="width:50px;" >
+  <div >
+    COMPUTER GRAPHICS Assignment-2(Group-1, Group-2,Group-4),WEB (Group-1,Group-2) ,RENEWABLE ENERGY Assignment-2 UPLOADED <a href="/assignments" target="_blank"  > Clickhere</a>
+     </div>
+</div>
+
+
+<div class="alert alert-primary d-flex align-items-center" role="alert" role="alert" style="border-radius:10px; text-align:center; ">
+  <img  src="{% static 'images/icon_new.gif' %}" alt="Logo" style="width:50px;" >
+  <div >
+    COMPUTER GRAPHICS, RENEWABLE ENERGY, WEB, CLOUD COMPUTING, SYSTEM SOFTWARE  Notes UPLOADED <a href="/notes" target="_blank"> Clickhere</a>
+</div>
+</div>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="image-container" >
+  <div class="text" >BACKBENCHERS PORTAL
+  
+   
+  </div>
+  
+</div>
+
+
+ 
+
+
+<!-- <div class="gg" style="text-align: center;">
+  <span style="color: red;">Created By : <a  style="color: aqua;">| ROHITH S | NITHESH B | MANISH N | | MANJUNATH R S |</a> 
+</div> -->
+
+
+{% endblock body %}
